@@ -1,0 +1,92 @@
+
+{%load staticfiles %}
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="{% static 'chumthewaters/summoner_style.css' %}" />
+         <!--Favicon-->
+         <link rel="icon" type="image/png" sizes="32x32" href="{% static 'chumthewaters/rounded_fav.png' %}" />
+</head>
+<body bgcolor = "#ADEBFF">
+<!-- By Drew Siedel and Matt Meehan -->
+<title>{{ summ_name }} - Chum the Waters</title>
+
+{% if in_game %}
+<center>
+<h1>Summoner name: {{ summ_name }} </h1>
+<h2><img src = "http://ddragon.leagueoflegends.com/cdn/{{ ddragon_version }}/img/champion/{{ url_champ  }}.png" style="width:40px;height:40px;">  Playing: {{ champ_name }}, {{ champ_title }} </h2>
+</center>
+
+<table id="team1">
+  	<tr>
+    <th>Summoner</th>
+    <th>Past Record</th>
+    <th>Average KDA</th>
+    <th>Average CS</th>
+    <th>Chum Score</th>
+    </tr>
+
+    {% for summoner in summ1_list %}
+    	<tr>
+    	<td><a href="?q={{ summoner.name }}">{{ summoner.name }}</a></td>
+
+        <td>{{ summoner.wins }}/{{ summoner.losses }}</td>
+
+        <td>Average KDA: {{ summoner.kills }}/{{ summoner.deaths }}/{{ summoner.assists }}</td>
+
+        <td>Average CS: {{ summoner.cs }}</td>
+        
+        <td>Chum Score:
+                {% if summoner.chumScore != 101%}
+                        {{ summoner.chumScore }}
+                {% else %}
+                        N/A
+                {% endif %}
+        
+        </a>
+        </tr>
+    {% endfor %}
+  	
+
+</table>
+
+
+<table id="team2">
+  	<tr>
+    <th>Summoner</th>
+    <th>Past Record</th>
+    <th>Average KDA</th>
+    <th>Average CS</th>
+    <th>Chum Score</th>
+    </tr>
+
+    {% for summoner in summ2_list %}
+    	<tr>
+    	<td><a href="?q={{ summoner.name }}">{{ summoner.name }}</a></td>
+
+        <td>{{ summoner.wins }}/{{ summoner.losses }}</td>
+
+        <td>Average KDA: {{ summoner.kills }}/{{ summoner.deaths }}/{{ summoner.assists }}</td>
+
+        <td>Average CS: {{ summoner.cs }}</td>
+        
+        <td>Chum Score:
+                {% if summoner.chumScore != 101%}
+                        {{ summoner.chumScore }}
+                {% else %}
+                        N/A
+                {% endif %}
+        
+        </a>
+        </tr>
+    {% endfor %}
+
+</table>
+
+{% else %}
+<h>{{ summ_name }} is not in game, or cannot find a summoner with that name</h>
+{% endif %}
+
+
+</body>
+</html>
+

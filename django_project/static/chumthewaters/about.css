@@ -1,0 +1,33 @@
+/*
+About Page Style Sheet
+By Matt Meehan & Drew Siedel
+*/
+
+body{
+  background-color: rgb(1,0,1);
+}
+
+h1{
+  margin-top: 100px;
+  font-family: 'Play', sans-serif;
+  color: rgb(128, 171, 207);
+  margin-left: 100px;
+}
+
+p{
+  font-family: 'Play', sans-serif;
+  color: rgb(128, 171, 207);
+  margin-right: 700px;
+  margin-left: 100px;
+  line-height: 200%;
+}
+
+img{
+  width: 30%;
+  height: 30%;
+  z-index: -1;
+  position: absolute;
+  left: 70%;
+  top: 45%;
+  transform: translate(-50%, -50%)
+}

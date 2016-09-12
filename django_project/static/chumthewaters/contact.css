@@ -1,0 +1,51 @@
+/*
+Contact Page Style Sheet
+By Matt Meehan & Drew Siedel
+*/
+
+body{
+  background-color: rgb(1,0,1);
+}
+
+h1{
+  margin-top: 100px;
+  font-family: 'Play', sans-serif;
+  color: rgb(128, 171, 207);
+  margin-left: 100px;
+}
+
+h2{
+  margin-top: 50px;
+  font-family: 'Play', sans-serif;
+  color: rgb(128, 171, 207);
+  margin-left: 300px;
+}
+
+#dh{
+  margin-top: 100px;
+}
+
+p{
+  font-family: 'Play', sans-serif;
+  color: rgb(128, 171, 207);
+}
+
+#p1{
+  margin-left: 300px;
+}
+
+#p2{
+  margin-left: 300px;
+} 
+
+#img1{
+  position: absolute;
+  right: 150px;
+  top: 200px;
+}
+
+#img2{
+  position: absolute;
+  right: 150px;
+  top: 450px;
+}

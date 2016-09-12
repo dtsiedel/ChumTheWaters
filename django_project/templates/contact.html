@@ -1,0 +1,67 @@
+{% load staticfiles %}
+<!--Contact Page -->
+<!--By Matt Meehan & Drew Siedel -->
+
+<html>
+<head>
+<title>Contact Us</title>
+
+<!--Favicon-->
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'chumthewaters/rounded_fav.png' %}" />
+
+<!--Fonts-->
+<link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+<!--Javascript-->
+<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!--Stylesheets-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'chumthewaters/contact.css' %} "/>
+<link rel="stylesheet" type="text/css" href="{% static 'chumthewaters/nav_style.css' %} "/>
+
+</head>
+
+<!--Navbar-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Chum the Waters</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li class="active"><a href="/contact">Contact</a></li>
+	<li><a href="/chumscore">Chum Score</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Server <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/">North America (NA)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1> Contact Us </h1>
+
+<img src="{{ STATIC_URL }}chumthewaters/nami.png" id="img1" align="right">
+<h2 id="mh"> Matthew Meehan </h2>
+<p id="p1"> Computer Engineering, Rochester Institute of Technology </p>
+<p id="p1"> Email: mtmeehan@gmail.com </p>
+
+<div align="left">
+<img src="{{ STATIC_URL }}chumthewaters/brand.png" id="img2" align="right">
+</div>
+<h2 id="dh"> Drew Siedel </h2>
+<p id="p2"> Computer Science, Lehigh University </p>
+<p id="p2"> Email: dts.siedel@gmail.com </p>
+
+
+
+</html>
+            

@@ -1,0 +1,26 @@
+/*
+Chum Score Page Style Sheet
+By Matt Meehan & Drew Siedel
+*/
+
+body{
+  background-color: rgb(1,0,1);
+}
+
+h{
+  margin-top: 100px;
+  font-family: 'Play', sans-serif;
+  color: rgb(128, 171, 207);
+  margin-left: 100px;
+}
+
+img{
+  width: 30%;
+  height: 30%;
+  z-index: -1;
+  position: absolute;
+  left: 70%;
+  top: 45%;
+  transform: translate(-50%, -50%)
+}
+
